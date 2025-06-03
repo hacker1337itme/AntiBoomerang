@@ -14,11 +14,12 @@ Anti-Boomerang C++ class with thread overload protection, featuring:
     ✅ 🧵 Thread overload protection — max active threads limit using mutex + atomic counter
 
 🛡️ Summary of Protection
-Protection Type	Description
-Recursion Guard	Limits how deep the function can call itself
-Loopback Block	Prevents re-entrant callbacks
-Replay Filter	Ignores already-seen event IDs
-Nested Simulation	Shows how recursion can be safely controlled
-
-
+- Protection Type	Description
+- Recursion Guard	Limits how deep the function can call itself
+- Loopback Block	Prevents re-entrant callbacks
+- Replay Filter	Ignores already-seen event IDs
+- Nested Simulation	Shows how recursion can be safely controlled
+```
+g++ -std=c++17 -pthread AntiBoomerang.cpp -o AntiBoomerang
+```
 
